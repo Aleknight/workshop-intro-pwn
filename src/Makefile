@@ -17,7 +17,7 @@ repeat-nx: repeat.c
 	$(CC) -o $@ -fno-stack-protector -no-pie -static $^
 
 play: play.c
-	$(CC) -o $@ $^
+	$(CC) -g -o $@ $^
 
 clean:
 	rm -rf $(TARGETS)
